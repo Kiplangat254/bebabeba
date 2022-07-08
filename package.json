@@ -1,0 +1,29 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "beba backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kiplangat254/beba.git"
+  },
+  "keywords": [
+    "beba",
+    "backend"
+  ],
+  "author": "Steve Kiplangat korir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kiplangat254/beba/issues"
+  },
+  "homepage": "https://github.com/Kiplangat254/beba#readme",
+  "dependencies": {
+    "@angular/cli": "^14.0.5",
+    "@angular/core": "^14.0.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.3"
+  }
+}
