@@ -1,0 +1,16 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.example-container > * {
+  width: 75%;
+}
+.upload{
+  margin-bottom: 8px;
+}
+
+
+
+
+ 

@@ -1,0 +1,51 @@
+
+<mat-toolbar color="primary">
+      <span>beba</span>
+      <span class="spacer"></span>
+    </mat-toolbar>
+
+
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="form">
+<div class="example-container" fxLayout="column" fxLayoutAlign="center center">
+
+  <h4><mat-card-title class="title">Select Nearest City/Town</mat-card-title>
+</h4>
+
+  
+
+        <!--FORM FIELDS HERE-->
+         <mat-form-field class="full-width">
+            <mat-label>Firstname</mat-label>
+            <input [formControl]="firstname" matInput placeholder="Firstname" required>
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Lastname</mat-label>
+            <input  [formControl]="lastname" matInput placeholder="Lastname" required>
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>IDnumber</mat-label>
+            <input [formControl]="idnumber" matInput placeholder="IDnumber" required>
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Phonenumber</mat-label>
+            <input [formControl]="phonenumber" matInput placeholder="Phonenumber" required>
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Email</mat-label>
+            <input [formControl]="email" matInput placeholder="Email" required>
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Password</mat-label>
+            <input [formControl]="password" matInput placeholder="Password" required> 
+         </mat-form-field>
+      <!--REGISTER BUTTON HERE-->
+
+<section class="example-section">
+  <mat-checkbox class="example-margin">Accept Terms and Conditions</mat-checkbox>
+</section>
+      <button mat-raised-button color="primary" type="submit">REGISTER</button>
+   <p>No account?  <a mat-flat-button routerLink="/login">LOGIN</a></p>
+</div>
+</form>
+
+

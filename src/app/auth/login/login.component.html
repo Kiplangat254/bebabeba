@@ -1,0 +1,18 @@
+<mat-toolbar color="primary">
+  <span>beba</span>
+</mat-toolbar>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form">
+<div class="example-container" fxLayout="column" fxLayoutAlign="center center">
+                <!--FORM FIELDS HERE-->
+         <mat-form-field class="full-width">
+            <mat-label>Email</mat-label>
+            <input [formControl]="email" matInput  placeholder="Email" name="email">
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Password</mat-label>
+            <input [formControl]="password" matInput  placeholder="Password"  name="password">
+         </mat-form-field>  
+         <span class= "forgot">Forgot Password?  <a mat-flat-button routerLink="/reset">RESET</a></span>
+            <button mat-raised-button color="primary" class="SUBMIT">LOGIN</button>
+            <p>New User?<a mat-flat-button routerLink="/register">SIGN UP</a></p>
+          </div>

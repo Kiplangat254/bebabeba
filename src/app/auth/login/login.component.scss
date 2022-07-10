@@ -1,0 +1,17 @@
+.example-container {
+        display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+  .example-container > * {
+    width: 75%;
+  }
+.title{
+  margin: 10px;
+  text-align: center;
+  font-weight: 525;
+  font-size: large;
+}
+.submit{
+  border-radius: 20px;
+}
