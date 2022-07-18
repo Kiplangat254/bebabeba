@@ -85,7 +85,7 @@ import { DetailsComponent } from './details/details.component';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [ ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

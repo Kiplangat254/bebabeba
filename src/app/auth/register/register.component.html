@@ -8,35 +8,36 @@
 <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="form">
 <div class="example-container" fxLayout="column" fxLayoutAlign="center center">
 
-  <h4><mat-card-title class="title">Select Nearest City/Town</mat-card-title>
+  <h4><mat-card-title class="title">Register</mat-card-title>
 </h4>
-
-  
-
         <!--FORM FIELDS HERE-->
          <mat-form-field class="full-width">
             <mat-label>Firstname</mat-label>
-            <input [formControl]="firstname" matInput placeholder="Firstname" required>
+            <input formControlName="firstname" name="firstname" matInput placeholder="Firstname" required>
          </mat-form-field>
          <mat-form-field class="full-width">
             <mat-label>Lastname</mat-label>
-            <input  [formControl]="lastname" matInput placeholder="Lastname" required>
+            <input  formControlName="lastname" name="lastname" matInput placeholder="Lastname" required>
          </mat-form-field>
          <mat-form-field class="full-width">
             <mat-label>IDnumber</mat-label>
-            <input [formControl]="idnumber" matInput placeholder="IDnumber" required>
+            <input formControlName="idnumber" name="idnumber" matInput placeholder="IDnumber" required>
          </mat-form-field>
          <mat-form-field class="full-width">
             <mat-label>Phonenumber</mat-label>
-            <input [formControl]="phonenumber" matInput placeholder="Phonenumber" required>
+            <input formControlName="phonenumber" name="phonenumber" matInput placeholder="Phonenumber" required>
          </mat-form-field>
          <mat-form-field class="full-width">
             <mat-label>Email</mat-label>
-            <input [formControl]="email" matInput placeholder="Email" required>
+            <input formControlName="email" name="email" matInput placeholder="Email" required>
          </mat-form-field>
          <mat-form-field class="full-width">
             <mat-label>Password</mat-label>
-            <input [formControl]="password" matInput placeholder="Password" required> 
+            <input formControlName="password" name="password" matInput placeholder="Password" required> 
+         </mat-form-field>
+         <mat-form-field class="full-width">
+            <mat-label>Confirm Password</mat-label>
+            <input formControlName="confirm" name="confirm" matInput placeholder="Confirm Password" required> 
          </mat-form-field>
       <!--REGISTER BUTTON HERE-->
 
